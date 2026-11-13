@@ -1,0 +1,2 @@
+# Placeholder until the AdMob publisher ID is known.
+# Format: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
