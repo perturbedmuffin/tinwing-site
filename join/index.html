@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Fly with me in Tinwing!</title>
+<meta name="description" content="Tap to join my team in Tinwing: arcade team battles in the sky, on iPhone.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tinwing">
+<meta property="og:title" content="Fly with me in Tinwing!">
+<meta property="og:description" content="Tap to join my team: arcade team battles in the sky, on iPhone.">
+<meta property="og:image" content="https://perturbedmuffin.github.io/tinwing-site/join/card.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Tinwing icon, a toy plane in a blue sky: Fly with me in Tinwing!">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<script src="join.js"></script>
+<style>
+:root{--bg:#f7f9fc;--fg:#18202b;--muted:#5a6575;--accent:#2a6df4;--on-accent:#fff;--card:#ffffff;--line:#d9e1ec;--tile:#4db8ff;--ink:#1a2036}
+@media (prefers-color-scheme:dark){:root{--bg:#10141b;--fg:#e8edf4;--muted:#a3adbb;--accent:#7aa7ff;--on-accent:#10141b;--card:#18202b;--line:#2b3546;--tile:#4db8ff;--ink:#e8edf4}}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,system-ui,sans-serif;margin:0;padding:max(20px,env(safe-area-inset-top)) 16px max(28px,env(safe-area-inset-bottom))}
+main{max-width:520px;margin:0 auto}
+a{color:var(--accent)}
+nav{margin-bottom:20px}
+nav a{margin-right:16px}
+.hero{display:flex;gap:16px;align-items:center;margin-bottom:8px}
+.hero img{width:84px;height:84px;border-radius:19px;flex:none;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+h1{font-size:28px;line-height:1.15;margin:0}
+h2{font-size:19px;margin:28px 0 8px}
+p{margin:8px 0}
+.muted{color:var(--muted)}
+.small{font-size:15px}
+.label{margin-top:22px;font-weight:600;color:var(--muted);text-align:center}
+.code{display:flex;justify-content:center;gap:10px;margin:8px 0 4px}
+.code span{display:flex;align-items:center;justify-content:center;width:64px;height:78px;border-radius:16px;background:var(--tile);border:4px solid var(--ink);box-shadow:0 5px 0 var(--ink);font-size:46px;font-weight:800;color:#fff;-webkit-text-stroke:2px #1a2036;paint-order:stroke fill}
+.btn{display:block;width:100%;min-height:54px;margin:10px 0;padding:14px 16px;border-radius:14px;text-align:center;text-decoration:none;font-weight:700;font-size:19px;background:var(--card);color:var(--fg);border:2px solid var(--line)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.steps{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
+.inline-code{font-variant-numeric:tabular-nums;letter-spacing:.08em;font-weight:700}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="../">Tinwing</a><a href="../privacy.html">Privacy</a><a href="../support.html">Support</a></nav>
+
+<div class="hero">
+<img src="icon.png" alt="" width="84" height="84">
+<div>
+<h1>Fly with me in Tinwing!</h1>
+<p class="muted small">A friend wants you on their team: arcade air battles over bright islands, on iPhone.</p>
+</div>
+</div>
+
+<div id="with-code" hidden>
+<p class="label">Your friend's code</p>
+<div class="code" id="tiles" role="img"></div>
+
+<h2>Have Tinwing?</h2>
+<a class="btn primary" id="open" href="tinwing://join/">Open Tinwing</a>
+<p class="muted small">It opens the game and joins your friend.</p>
+</div>
+
+<div id="no-code">
+<p class="label" id="no-code-label">Ask your friend for their 4-digit code.</p>
+</div>
+
+<h2>New to Tinwing?</h2>
+<a class="btn" id="get" href="https://apps.apple.com/app/id6834710152">Get Tinwing</a>
+<a class="btn" id="beta" href="#" hidden>Join the beta</a>
+<p class="steps">Then open Tinwing, tap <b>Invite / Join</b> › <b>Join</b> and type <span id="this-code">your friend's code</span>.</p>
+
+<p class="muted small">Codes last a few minutes. If no one is there, ask your friend to send a new invite.</p>
+</main>
+</body>
+</html>
