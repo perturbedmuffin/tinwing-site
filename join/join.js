@@ -10,7 +10,7 @@
 	// ("https://testflight.apple.com/join/..."); empty = no "Join the beta" button.
 	var APP_ID = "6834710152";
 	var APP_STORE = "https://apps.apple.com/app/id" + APP_ID;
-	var BETA = "";
+	var BETA = "https://testflight.apple.com/join/6QjMPrpb";
 
 	// The code, read exactly as the game reads the link (LobbyCode.from_url): the first c= in
 	// the query, exactly four digits 0-9, or nothing.
